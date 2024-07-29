@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="./tictactoe.js" defer></script>
+</head>
+<body>
+
+    <div>
+        <h1>Tic Tac Toe</h1>
+    </div>
+
+    <div id="all">
+        <div style="display: none;" id="player1"></div>
+        <div style="display: none;" id="player2"></div>
+    </div>
+    
+
+    <div id="input">
+        <p>Name Player 1</p>
+        <input type="text" name="" id="namePlayer1">
+        <input type="color" name="" id="colorPlayer1"><br><br>
+        <p>Name Player 2</p>
+        <input type="text" name="" id="namePlayer2">
+        <input type="color" name="" id="colorPlayer2"><br><br>
+        <input type="submit" name="" id="submit" onclick="nameAndColor()">
+    </div>
+
+    <div style="display: none;" id="pl1"></div>
+    <div style="display: none;" id="pl2"></div>
+    
+    <div id="gamefield" style="display: none;">
+       <div id="box" class="box" onclick="boxC(this, 0,0)"></div>
+       <div id="box1" class="box" onclick="boxC(this, 0,1)"></div>
+       <div id="box2" class="box" onclick="boxC(this, 0,2)"></div>
+       <div id="box3" class="box" onclick="boxC(this, 1,0)"></div>
+       <div id="box4" class="box" onclick="boxC(this, 1,1)"></div>
+       <div id="box5" class="box" onclick="boxC(this, 1,2)"></div>
+       <div id="box6" class="box" onclick="boxC(this, 2,0)"></div>
+       <div id="box7" class="box" onclick="boxC(this, 2,1)"></div>
+       <div id="box8" class="box" onclick="boxC(this, 2,2)"></div>
+    </div>
+
+
+    <div style="display: none;" id="buttons">
+        <div  id="Again" onclick="playAgain()">Play Again</div><br>
+        <div  id="Results" onclick="showResults()">Show Final Results</div><br>
+        <div id="endGame" onclick="endGame()">End Game</div><br>
+        
+    </div>
+
+    <div id="alle">
+        <div id="Results1"></div>
+        <div id="Results2"></div>
+    </div>
+   
+
+    <div style="display: none;" id="wolke">
+        <img src="./Bilder/wolke.png" alt="">
+    </div>
+
+    <div style="display: none;" id="showWinner"></div>
+
+
+
+
+</body>
+</html>
